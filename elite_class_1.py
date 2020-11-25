@@ -1,4 +1,4 @@
-class Elites:   # Elites will wort until they can;t
+class Elites:
     """Modeling Elite enemies."""
 
     def __init__(self, name, tier, type, armor_color, shield, weapon, weapon2,
@@ -116,4 +116,3 @@ print("\n")
 elite_minor.describe_elite_minor()
 print("\n")
 elite_spec_ops.describe_elite_spec_ops()
-print("work you idiot!")
