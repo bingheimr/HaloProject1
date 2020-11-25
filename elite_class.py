@@ -34,6 +34,37 @@ class Elites:   # Elites will wort until they can;t
             f"\nPoints: {self.points}"
         )
 
+    def describe_elite_major(self):
+        """Describe an Elite Major"""
+        print(f"The following is a breakdown of the enemy known as: {self.name.title()}")
+        print(
+            f"Name: {self.name} "
+            f"\nTier: {self.tier} "
+            f"\nType: {self.type} "
+            f"\nArmor Color: {self.armor_color} "
+            f"\nShield: {self.shield} "
+            f"\nWeapons: {self.weapon}\n\t\t {self.weapon2}\n\t\t {self.weapon3} "
+            f"\nGrenade Count: {self.grenade_count} "
+            f"\nShield Strength: {self.shield_strength} "
+            f"\nHealth: {self.health_points} "
+            f"\nPoints: {self.points}"
+        )
+
+    def describe_elite_spec_ops(self):
+        """Describe a Spec Ops Elite."""
+        print(f"The following is a breakdown of the enemy known as: {self.name.title()}")
+        print(
+            f"Name: {self.name} "
+            f"\nTier: {self.tier} "
+            f"\nType: {self.type} "
+            f"\nArmor Color: {self.armor_color} "
+            f"\nShield: {self.shield} "
+            f"\nWeapons: {self.weapon}\n\t\t {self.weapon2}\n\t\t {self.weapon3} "
+            f"\nGrenade Count: {self.grenade_count} "
+            f"\nShield Strength: {self.shield_strength} "
+            f"\nHealth: {self.health_points} "
+            f"\nPoints: {self.points}"
+        )
 
 elite_minor = Elites(
               'elite minor',
@@ -79,3 +110,9 @@ elite_spec_ops = Elites(
               200,
               100
             )
+
+elite_major.describe_elite_major()
+print("\n")
+elite_minor.describe_elite_minor()
+print("\n")
+elite_spec_ops.describe_elite_spec_ops()
